@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dolce Vita Macaron</title>
+
+  <!-- خط Cookie من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --overlay: rgba(0,0,0,0.45); }
+
+    html, body { height: 100%; margin: 0; }
+
+    body {
+      font-family: "Cookie", cursive;
+      color: #fff;
+      /* خلفية كاملة مع تأثير Parallax بسيط */
+      background-image: url('https://winecountrytable.com/wp-content/uploads/2011/12/2016-6-9-French-Macarons-Cookie-Recipe-Video-Jordan-Winery-BLOG-6409.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: repeat;
+      background-attachment: fixed; /* parallax-ish تأثير بسيط عند التمرير */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header ثابت أعلى الصفحة (اختياري) */
+    header {
+      width: 100%;
+      padding: 12px 0;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h2 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #ffd700;
+    }
+
+    /* منطقة العنوان المركزي فوق الخلفية */
+    .center-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .overlay {
+      background: var(--overlay);
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 90%;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      line-height: 1.15;
+    }
+
+    @media (max-width: 700px) {
+      header h2 { font-size: 1.4rem; }
+      h1 { font-size: 2.2rem; }
+    }
+     button{
+    background-color:blue;
+    }
+  </style>
+</head>
+<body>
+  <header aria-label="header">
+    <h2>Dolce Vita Macaron</h2>
+  </header>
+
+  <main class="center-wrap" aria-label="العنوان المركزي فوق الخلفية">
+    <div class="overlay" aria-label="تأكيد العنوان في المركز">
+      <h1>HELLO</h1>
+    </div>
+  </main>
+<center>
+    <a  href="https://www.instagram.com/teeba_.27/?hl=en#"target="_blank"><button>click here</button></a>
+    </center>
+</body>
+</html>
